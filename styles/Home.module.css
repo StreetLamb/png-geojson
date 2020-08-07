@@ -1,0 +1,41 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  background-color: #fff;
+}
+
+.menuitem {
+  font-size: 1.2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 1rem 0rem;
+  padding: 1rem;
+}
+
+.titlebox {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
