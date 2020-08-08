@@ -85,7 +85,9 @@ export default function UploadForm({ onSubmitForm, loading }) {
               Click or drag heatmap image to this area to upload
             </p>
             <p className="ant-upload-hint">
-              Only .png files below 2mb allowed.
+              Image must be: <br />
+              &lt; 2mb <br />
+              &lt; 0.36MP
             </p>
           </Dragger>
         </Form.Item>

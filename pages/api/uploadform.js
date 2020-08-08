@@ -37,15 +37,18 @@ export default (req, res) => {
           parseFloat(uLong),
           imageBuffer,
           (polygonList) => {
-            if (polygonList === "error") {
-              res.status(400).send("Bad request");
+            if (polygonList === "400") {
+              res.status(400).end();
+            } else if (polygonList === "401") {
+              res.status(400).end();
+            } else {
+              res.send(polygonList);
             }
-            res.send(polygonList);
           }
         );
       });
     } catch {
-      res.status(400).send("Bad request");
+      res.status(400).end();
     }
   }
 };
